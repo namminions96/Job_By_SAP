@@ -1,0 +1,292 @@
+2023-08-24 09:48:11.365 +07:00 [INF] Connect DB : DbConfig122
+2023-08-24 09:58:44.481 +07:00 [INF] Bắt đầu tải CARStockBalance : Call sftpHelper.DownloadAuthen 
+2023-08-24 09:58:45.703 +07:00 [ERR] DownloadAuthenD:\Test
+Renci.SshNet.Common.SshAuthenticationException: No suitable authentication method found to complete authentication (password).
+   at Renci.SshNet.ClientAuthentication.Authenticate(IConnectionInfoInternal connectionInfo, ISession session)
+   at Renci.SshNet.ConnectionInfo.Authenticate(ISession session, IServiceFactory serviceFactory)
+   at Renci.SshNet.Session.Connect()
+   at Renci.SshNet.BaseClient.CreateAndConnectSession()
+   at Renci.SshNet.BaseClient.Connect()
+   at BluePosVoucher.SftpHelper.DownloadAuthen(String source, String destination) in D:\Read_xml_VOucherINB\Read_xml\SftpHelper.cs:line 37
+2023-08-24 09:58:51.529 +07:00 [INF] Bắt đầu đọc CARStockBalanceD:\Test
+2023-08-24 09:59:15.324 +07:00 [ERR] Lỗi ProcessXmlPRD_SellingPrice
+System.IO.IOException: The process cannot access the file 'D:\Test\12.csv' because it is being used by another process.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.StreamReader.ValidateArgsAndOpenPath(String path, Encoding encoding, Int32 bufferSize)
+   at System.IO.StreamReader..ctor(String path)
+   at Read_xml.ReadFile.ProcessXmlPRD_CARStockBalance(String xmlFile, String processedFolderPathter) in D:\Read_xml_VOucherINB\Read_xml\ReadFile.cs:line 30
+2023-08-24 09:59:54.197 +07:00 [INF] Bắt đầu tải CARStockBalance : Call sftpHelper.DownloadAuthen 
+2023-08-24 09:59:54.620 +07:00 [ERR] DownloadAuthenD:\Test
+Renci.SshNet.Common.SshAuthenticationException: No suitable authentication method found to complete authentication (password).
+   at Renci.SshNet.ClientAuthentication.Authenticate(IConnectionInfoInternal connectionInfo, ISession session)
+   at Renci.SshNet.ConnectionInfo.Authenticate(ISession session, IServiceFactory serviceFactory)
+   at Renci.SshNet.Session.Connect()
+   at Renci.SshNet.BaseClient.CreateAndConnectSession()
+   at Renci.SshNet.BaseClient.Connect()
+   at BluePosVoucher.SftpHelper.DownloadAuthen(String source, String destination) in D:\Read_xml_VOucherINB\Read_xml\SftpHelper.cs:line 37
+2023-08-24 09:59:54.683 +07:00 [INF] Bắt đầu đọc CARStockBalanceD:\Test
+2023-08-24 10:06:53.154 +07:00 [INF] Bắt đầu tải CARStockBalance : Call sftpHelper.DownloadAuthen 
+2023-08-24 10:06:54.385 +07:00 [ERR] DownloadAuthenD:\Test
+Renci.SshNet.Common.SshAuthenticationException: No suitable authentication method found to complete authentication (password).
+   at Renci.SshNet.ClientAuthentication.Authenticate(IConnectionInfoInternal connectionInfo, ISession session)
+   at Renci.SshNet.ConnectionInfo.Authenticate(ISession session, IServiceFactory serviceFactory)
+   at Renci.SshNet.Session.Connect()
+   at Renci.SshNet.BaseClient.CreateAndConnectSession()
+   at Renci.SshNet.BaseClient.Connect()
+   at BluePosVoucher.SftpHelper.DownloadAuthen(String source, String destination) in D:\Read_xml_VOucherINB\Read_xml\SftpHelper.cs:line 37
+2023-08-24 10:06:54.589 +07:00 [INF] Bắt đầu đọc CARStockBalanceD:\Test
+2023-08-24 10:09:05.689 +07:00 [INF] Bắt đầu tải CARStockBalance : Call sftpHelper.DownloadAuthen 
+2023-08-24 10:09:06.231 +07:00 [ERR] DownloadAuthenD:\Test
+Renci.SshNet.Common.SshAuthenticationException: No suitable authentication method found to complete authentication (password).
+   at Renci.SshNet.ClientAuthentication.Authenticate(IConnectionInfoInternal connectionInfo, ISession session)
+   at Renci.SshNet.ConnectionInfo.Authenticate(ISession session, IServiceFactory serviceFactory)
+   at Renci.SshNet.Session.Connect()
+   at Renci.SshNet.BaseClient.CreateAndConnectSession()
+   at Renci.SshNet.BaseClient.Connect()
+   at BluePosVoucher.SftpHelper.DownloadAuthen(String source, String destination) in D:\Read_xml_VOucherINB\Read_xml\SftpHelper.cs:line 37
+2023-08-24 10:09:06.556 +07:00 [INF] Bắt đầu đọc CARStockBalanceD:\Test
+2023-08-24 10:19:56.721 +07:00 [INF] Bắt đầu tải CARStockBalance : Call sftpHelper.DownloadAuthen 
+2023-08-24 10:19:57.341 +07:00 [ERR] DownloadAuthenD:\Test
+Renci.SshNet.Common.SshAuthenticationException: No suitable authentication method found to complete authentication (password).
+   at Renci.SshNet.ClientAuthentication.Authenticate(IConnectionInfoInternal connectionInfo, ISession session)
+   at Renci.SshNet.ConnectionInfo.Authenticate(ISession session, IServiceFactory serviceFactory)
+   at Renci.SshNet.Session.Connect()
+   at Renci.SshNet.BaseClient.CreateAndConnectSession()
+   at Renci.SshNet.BaseClient.Connect()
+   at BluePosVoucher.SftpHelper.DownloadAuthen(String source, String destination) in D:\Read_xml_VOucherINB\Read_xml\SftpHelper.cs:line 37
+2023-08-24 10:19:57.398 +07:00 [INF] Bắt đầu đọc CARStockBalanceD:\Test
+2023-08-24 10:20:59.384 +07:00 [INF] Bắt đầu tải CARStockBalance : Call sftpHelper.DownloadAuthen 
+2023-08-24 10:21:00.370 +07:00 [ERR] DownloadAuthenD:\Test
+Renci.SshNet.Common.SshAuthenticationException: No suitable authentication method found to complete authentication (password).
+   at Renci.SshNet.ClientAuthentication.Authenticate(IConnectionInfoInternal connectionInfo, ISession session)
+   at Renci.SshNet.ConnectionInfo.Authenticate(ISession session, IServiceFactory serviceFactory)
+   at Renci.SshNet.Session.Connect()
+   at Renci.SshNet.BaseClient.CreateAndConnectSession()
+   at Renci.SshNet.BaseClient.Connect()
+   at BluePosVoucher.SftpHelper.DownloadAuthen(String source, String destination) in D:\Read_xml_VOucherINB\Read_xml\SftpHelper.cs:line 37
+2023-08-24 10:21:00.491 +07:00 [INF] Bắt đầu đọc CARStockBalanceD:\Test
+2023-08-24 10:21:33.921 +07:00 [ERR] Lỗi ProcessXmlPRD_SellingPrice
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert explicit value for identity column in table 'CARStockBalances' when IDENTITY_INSERT is set to OFF.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:edc67dee-bd85-4d7a-9ab8-83f9cd21e576
+Error Number:544,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Read_xml.ReadFile.ProcessXmlPRD_CARStockBalance(String xmlFile, String processedFolderPathter) in D:\Read_xml_VOucherINB\Read_xml\ReadFile.cs:line 54
+2023-08-24 10:21:33.931 +07:00 [INF] Process : 1 file CARStockBalance
+2023-08-24 10:21:51.046 +07:00 [INF] Bắt đầu tải CARStockBalance : Call sftpHelper.DownloadAuthen 
+2023-08-24 10:21:51.670 +07:00 [ERR] DownloadAuthenD:\Test
+Renci.SshNet.Common.SshAuthenticationException: No suitable authentication method found to complete authentication (password).
+   at Renci.SshNet.ClientAuthentication.Authenticate(IConnectionInfoInternal connectionInfo, ISession session)
+   at Renci.SshNet.ConnectionInfo.Authenticate(ISession session, IServiceFactory serviceFactory)
+   at Renci.SshNet.Session.Connect()
+   at Renci.SshNet.BaseClient.CreateAndConnectSession()
+   at Renci.SshNet.BaseClient.Connect()
+   at BluePosVoucher.SftpHelper.DownloadAuthen(String source, String destination) in D:\Read_xml_VOucherINB\Read_xml\SftpHelper.cs:line 37
+2023-08-24 10:21:51.742 +07:00 [INF] Bắt đầu đọc CARStockBalanceD:\Test
+2023-08-24 10:22:01.482 +07:00 [ERR] Lỗi ProcessXmlPRD_SellingPrice
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert explicit value for identity column in table 'CARStockBalances' when IDENTITY_INSERT is set to OFF.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:633e181e-278c-4270-b471-4540f1b14d94
+Error Number:544,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Read_xml.ReadFile.ProcessXmlPRD_CARStockBalance(String xmlFile, String processedFolderPathter) in D:\Read_xml_VOucherINB\Read_xml\ReadFile.cs:line 54
+2023-08-24 10:22:01.490 +07:00 [INF] Process : 1 file CARStockBalance
+2023-08-24 10:22:31.751 +07:00 [INF] Bắt đầu tải CARStockBalance : Call sftpHelper.DownloadAuthen 
+2023-08-24 10:22:32.632 +07:00 [ERR] DownloadAuthenD:\Test
+Renci.SshNet.Common.SshAuthenticationException: No suitable authentication method found to complete authentication (password).
+   at Renci.SshNet.ClientAuthentication.Authenticate(IConnectionInfoInternal connectionInfo, ISession session)
+   at Renci.SshNet.ConnectionInfo.Authenticate(ISession session, IServiceFactory serviceFactory)
+   at Renci.SshNet.Session.Connect()
+   at Renci.SshNet.BaseClient.CreateAndConnectSession()
+   at Renci.SshNet.BaseClient.Connect()
+   at BluePosVoucher.SftpHelper.DownloadAuthen(String source, String destination) in D:\Read_xml_VOucherINB\Read_xml\SftpHelper.cs:line 37
+2023-08-24 10:22:32.704 +07:00 [INF] Bắt đầu đọc CARStockBalanceD:\Test
+2023-08-24 10:22:42.833 +07:00 [ERR] Lỗi ProcessXmlPRD_SellingPrice
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert explicit value for identity column in table 'CARStockBalances' when IDENTITY_INSERT is set to OFF.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:1249cbbb-8e57-48e1-8287-6fc2b8a6e7f5
+Error Number:544,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Read_xml.ReadFile.ProcessXmlPRD_CARStockBalance(String xmlFile, String processedFolderPathter) in D:\Read_xml_VOucherINB\Read_xml\ReadFile.cs:line 54
+2023-08-24 10:22:42.842 +07:00 [INF] Process : 1 file CARStockBalance
+2023-08-24 10:22:49.957 +07:00 [INF] Bắt đầu tải CARStockBalance : Call sftpHelper.DownloadAuthen 
+2023-08-24 10:22:50.613 +07:00 [ERR] DownloadAuthenD:\Test
+Renci.SshNet.Common.SshAuthenticationException: No suitable authentication method found to complete authentication (password).
+   at Renci.SshNet.ClientAuthentication.Authenticate(IConnectionInfoInternal connectionInfo, ISession session)
+   at Renci.SshNet.ConnectionInfo.Authenticate(ISession session, IServiceFactory serviceFactory)
+   at Renci.SshNet.Session.Connect()
+   at Renci.SshNet.BaseClient.CreateAndConnectSession()
+   at Renci.SshNet.BaseClient.Connect()
+   at BluePosVoucher.SftpHelper.DownloadAuthen(String source, String destination) in D:\Read_xml_VOucherINB\Read_xml\SftpHelper.cs:line 37
+2023-08-24 10:22:50.686 +07:00 [INF] Bắt đầu đọc CARStockBalanceD:\Test
+2023-08-24 10:26:49.987 +07:00 [INF] Bắt đầu tải CARStockBalance : Call sftpHelper.DownloadAuthen 
+2023-08-24 10:26:50.422 +07:00 [ERR] DownloadAuthenD:\Test
+Renci.SshNet.Common.SshAuthenticationException: No suitable authentication method found to complete authentication (password).
+   at Renci.SshNet.ClientAuthentication.Authenticate(IConnectionInfoInternal connectionInfo, ISession session)
+   at Renci.SshNet.ConnectionInfo.Authenticate(ISession session, IServiceFactory serviceFactory)
+   at Renci.SshNet.Session.Connect()
+   at Renci.SshNet.BaseClient.CreateAndConnectSession()
+   at Renci.SshNet.BaseClient.Connect()
+   at BluePosVoucher.SftpHelper.DownloadAuthen(String source, String destination) in D:\Read_xml_VOucherINB\Read_xml\SftpHelper.cs:line 37
+2023-08-24 10:26:50.491 +07:00 [INF] Bắt đầu đọc CARStockBalanceD:\Test
+2023-08-24 10:33:03.998 +07:00 [INF] Bắt đầu tải CARStockBalance : Call sftpHelper.DownloadAuthen 
+2023-08-24 10:33:04.517 +07:00 [ERR] DownloadAuthenD:\Test
+Renci.SshNet.Common.SshAuthenticationException: No suitable authentication method found to complete authentication (password).
+   at Renci.SshNet.ClientAuthentication.Authenticate(IConnectionInfoInternal connectionInfo, ISession session)
+   at Renci.SshNet.ConnectionInfo.Authenticate(ISession session, IServiceFactory serviceFactory)
+   at Renci.SshNet.Session.Connect()
+   at Renci.SshNet.BaseClient.CreateAndConnectSession()
+   at Renci.SshNet.BaseClient.Connect()
+   at BluePosVoucher.SftpHelper.DownloadAuthen(String source, String destination) in D:\Read_xml_VOucherINB\Read_xml\SftpHelper.cs:line 37
+2023-08-24 10:33:04.603 +07:00 [INF] Bắt đầu đọc CARStockBalanceD:\Test
+2023-08-24 10:35:08.557 +07:00 [INF] Process : 1 file CARStockBalance
+2023-08-24 10:45:17.816 +07:00 [INF] Bắt đầu tải CARStockBalance : Call sftpHelper.DownloadAuthen 
+2023-08-24 10:45:18.468 +07:00 [ERR] DownloadAuthenD:\Test
+Renci.SshNet.Common.SshAuthenticationException: No suitable authentication method found to complete authentication (password).
+   at Renci.SshNet.ClientAuthentication.Authenticate(IConnectionInfoInternal connectionInfo, ISession session)
+   at Renci.SshNet.ConnectionInfo.Authenticate(ISession session, IServiceFactory serviceFactory)
+   at Renci.SshNet.Session.Connect()
+   at Renci.SshNet.BaseClient.CreateAndConnectSession()
+   at Renci.SshNet.BaseClient.Connect()
+   at BluePosVoucher.SftpHelper.DownloadAuthen(String source, String destination) in D:\Read_xml_VOucherINB\Read_xml\SftpHelper.cs:line 37
+2023-08-24 10:45:18.748 +07:00 [INF] Bắt đầu đọc CARStockBalanceD:\Test
+2023-08-24 10:46:58.359 +07:00 [INF] Process : 1 file CARStockBalance
+2023-08-24 10:51:20.533 +07:00 [INF] Bắt đầu tải CARStockBalance : Call sftpHelper.DownloadAuthen 
+2023-08-24 10:51:21.003 +07:00 [ERR] DownloadAuthenD:\Test
+Renci.SshNet.Common.SshAuthenticationException: No suitable authentication method found to complete authentication (password).
+   at Renci.SshNet.ClientAuthentication.Authenticate(IConnectionInfoInternal connectionInfo, ISession session)
+   at Renci.SshNet.ConnectionInfo.Authenticate(ISession session, IServiceFactory serviceFactory)
+   at Renci.SshNet.Session.Connect()
+   at Renci.SshNet.BaseClient.CreateAndConnectSession()
+   at Renci.SshNet.BaseClient.Connect()
+   at BluePosVoucher.SftpHelper.DownloadAuthen(String source, String destination)
+2023-08-24 10:51:21.055 +07:00 [INF] Bắt đầu đọc CARStockBalanceD:\Test
+2023-08-24 10:53:50.618 +07:00 [INF] Process : 1 file CARStockBalance
+2023-08-24 11:08:10.788 +07:00 [INF] Bắt đầu tải CARStockBalance : Call sftpHelper.DownloadAuthen 
+2023-08-24 11:08:12.800 +07:00 [INF] Download from sftp: 1 file
+2023-08-24 11:08:25.801 +07:00 [INF] Bắt đầu đọc CARStockBalanceD:\Test
+2023-08-24 11:08:56.036 +07:00 [INF] Tổng File :1
+2023-08-24 11:10:38.259 +07:00 [INF] Process : 1 file CARStockBalance
+2023-08-24 11:17:00.526 +07:00 [INF] Bắt đầu tải CARStockBalance : Call sftpHelper.DownloadAuthen 
+2023-08-24 11:17:01.498 +07:00 [INF] Download from sftp: 1 file
+2023-08-24 11:17:01.498 +07:00 [INF] Bắt đầu đọc CARStockBalanceD:\Test
+2023-08-24 11:17:02.800 +07:00 [INF] Tổng File :1
+2023-08-24 11:18:31.156 +07:00 [INF] Process : 1 file CARStockBalance
+2023-08-24 11:24:11.430 +07:00 [INF] Bắt đầu tải CARStockBalance : Call sftpHelper.DownloadAuthen 
+2023-08-24 11:24:12.811 +07:00 [INF] Download from sftp: 1 file
+2023-08-24 11:24:12.811 +07:00 [INF] Bắt đầu đọc CARStockBalanceD:\Test
+2023-08-24 11:24:14.954 +07:00 [INF] Tổng File :1
+2023-08-24 11:24:54.387 +07:00 [INF] Bắt đầu tải CARStockBalance : Call sftpHelper.DownloadAuthen 
+2023-08-24 11:24:56.655 +07:00 [INF] Download from sftp: 0 file
+2023-08-24 11:24:56.655 +07:00 [INF] Bắt đầu đọc CARStockBalanceD:\Test
+2023-08-24 11:24:59.183 +07:00 [INF] Tổng File :1
+2023-08-24 11:26:56.611 +07:00 [INF] Process : 1 file CARStockBalance
+2023-08-24 11:27:43.113 +07:00 [INF] Bắt đầu tải CARStockBalance : Call sftpHelper.DownloadAuthen 
+2023-08-24 11:27:45.439 +07:00 [INF] Download from sftp: 1 file
+2023-08-24 11:27:45.440 +07:00 [INF] Bắt đầu đọc CARStockBalanceD:\Test
+2023-08-24 11:27:46.477 +07:00 [INF] Tổng File :1
+2023-08-24 11:28:55.157 +07:00 [INF] Process : 1 file CARStockBalance
+2023-08-24 11:33:37.303 +07:00 [INF] Bắt đầu tải CARStockBalance : Call sftpHelper.DownloadAuthen 
+2023-08-24 11:33:38.585 +07:00 [INF] Download from sftp: 1 file
+2023-08-24 11:33:38.585 +07:00 [INF] Bắt đầu đọc CARStockBalanceD:\Test
+2023-08-24 11:33:39.746 +07:00 [INF] Tổng File :1
+2023-08-24 11:34:52.991 +07:00 [INF] Count Data Inserted : 22984Row
+2023-08-24 11:35:06.799 +07:00 [INF] Process : 1 file CARStockBalance
+2023-08-24 11:38:28.723 +07:00 [INF] Bắt đầu tải CARStockBalance : Call sftpHelper.DownloadAuthen 
+2023-08-24 11:38:29.580 +07:00 [INF] Download from sftp: 1 file
+2023-08-24 11:38:29.581 +07:00 [INF] Bắt đầu đọc CARStockBalanceD:\Test
+2023-08-24 11:38:30.732 +07:00 [INF] Tổng File :1
+2023-08-24 11:39:37.667 +07:00 [INF] 12.csvCount Data Inserted : 22984 Row
+2023-08-24 11:39:37.902 +07:00 [INF] Process : 1 file CARStockBalance
+2023-08-24 13:15:39.677 +07:00 [INF] Bắt đầu tải CARStockBalance : Call sftpHelper.DownloadAuthen 
+2023-08-24 13:15:40.602 +07:00 [INF] Download from sftp: 1 file
+2023-08-24 13:15:40.602 +07:00 [INF] Bắt đầu đọc CARStockBalanceD:\Test
+2023-08-24 13:15:40.605 +07:00 [INF] Tổng File :1
+2023-08-24 13:16:53.472 +07:00 [INF] File:  12.csv Count Data Inserted : 22984 Row
+2023-08-24 13:16:55.456 +07:00 [INF] Process : 1 file CARStockBalance
+2023-08-24 15:06:48.690 +07:00 [INF] Connect DB : DbConfig122
+2023-08-24 15:07:26.848 +07:00 [INF] Connect DB : DbConfig122
+2023-08-24 15:07:37.513 +07:00 [INF] SeriaNo: 15350121692330699 {"Status":400,"Message":"Trạng thái kích hoạt không hợp lệ StorageSite: ","Data":[{"Status":"Trạng thái kích hoạt không hợp lệ StorageSite: ","Return":"E16","ActicleNo":null,"ActicleType":null,"VoucherNumber":null,"Value":null,"Voucher_Currency":null,"Validity_From_Date":null,"Expiry_Date":null,"CompanyCode":null,"Partner":"","IsEmployee":null}]}
+2023-08-24 15:07:37.532 +07:00 [INF] Connect DB : DbConfig125
+2023-08-24 15:07:39.246 +07:00 [INF] SeriaNo: 20180121692329195 {"Status":400,"Message":"Trạng thái kích hoạt không hợp lệ StorageSite: ","Data":[{"Status":"Trạng thái kích hoạt không hợp lệ StorageSite: ","Return":"E16","ActicleNo":null,"ActicleType":null,"VoucherNumber":null,"Value":null,"Voucher_Currency":null,"Validity_From_Date":null,"Expiry_Date":null,"CompanyCode":null,"Partner":"","IsEmployee":null}]}
+2023-08-24 15:07:39.246 +07:00 [INF] Bắt đầu tải CARStockBalance : Call sftpHelper.DownloadAuthen 
+2023-08-24 15:07:39.738 +07:00 [INF] Download from sftp: 0 file
+2023-08-24 15:07:39.738 +07:00 [INF] Bắt đầu đọc CARStockBalanceD:\Test
+2023-08-24 15:07:39.739 +07:00 [INF] Tổng File :0
+2023-08-24 15:07:51.831 +07:00 [INF] Run: SP_INSERT_CARSTOCKBALANCE_TK
+2023-08-24 15:08:44.520 +07:00 [INF] Run: SP_INSERT_CARSTOCKBALANCE_TK Data: OK
+2023-08-24 15:48:54.709 +07:00 [INF] Connect DB : DbConfig122
+2023-08-24 16:28:58.824 +07:00 [INF] Connect DB : DbConfig122
+2023-08-24 16:29:18.183 +07:00 [INF] SeriaNo: 15350121692330699 {"Status":400,"Message":"Trạng thái kích hoạt không hợp lệ StorageSite: ","Data":[{"Status":"Trạng thái kích hoạt không hợp lệ StorageSite: ","Return":"E16","ActicleNo":null,"ActicleType":null,"VoucherNumber":null,"Value":null,"Voucher_Currency":null,"Validity_From_Date":null,"Expiry_Date":null,"CompanyCode":null,"Partner":"","IsEmployee":null}]}
+2023-08-24 16:29:18.199 +07:00 [INF] Connect DB : DbConfig125
+2023-08-24 16:29:20.500 +07:00 [INF] SeriaNo: 20180121692329195 {"Status":400,"Message":"Trạng thái kích hoạt không hợp lệ StorageSite: ","Data":[{"Status":"Trạng thái kích hoạt không hợp lệ StorageSite: ","Return":"E16","ActicleNo":null,"ActicleType":null,"VoucherNumber":null,"Value":null,"Voucher_Currency":null,"Validity_From_Date":null,"Expiry_Date":null,"CompanyCode":null,"Partner":"","IsEmployee":null}]}
+2023-08-24 16:29:20.501 +07:00 [INF] Bắt đầu tải CARStockBalance : Call sftpHelper.DownloadAuthen 
+2023-08-24 16:29:21.189 +07:00 [INF] Download from sftp: 0 file
+2023-08-24 16:29:21.189 +07:00 [INF] Bắt đầu đọc CARStockBalanceD:\Test
+2023-08-24 16:29:21.190 +07:00 [INF] Tổng File :0
+2023-08-24 16:29:21.193 +07:00 [INF] Run: SP_INSERT_CARSTOCKBALANCE_TK
+2023-08-24 16:29:22.471 +07:00 [INF] Run: SP_INSERT_CARSTOCKBALANCE_TK Data: OK
