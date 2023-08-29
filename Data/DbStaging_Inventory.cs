@@ -6,12 +6,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Job_By_SAP.Models;
 
-namespace BluePosVoucher.Data
+namespace Job_By_SAP.Data
 {
     public class DbStaging_Inventory : DbContext
     {
         public DbSet<CARStockBalance> CARStockBalances { get; set; }
+        public DbSet<MailConfig> mailConfigs { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             var configuration = new ConfigurationBuilder()

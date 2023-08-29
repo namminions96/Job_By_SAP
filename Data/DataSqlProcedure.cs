@@ -45,5 +45,31 @@ namespace BluePosVoucher.Data
                 _logger.Error(ex, "Lỗi Exec Procedures ");
             }
         }
+        public void GetconfigMail()
+        {
+            try
+            {
+                var configuration = new ConfigurationBuilder()
+                    .SetBasePath(AppContext.BaseDirectory)
+                    .AddJsonFile("appsettings.json")
+                    .Build();
+                string connectionString = configuration["DbStaging_Inventory"];
+                _logger.Information("Get: SP_Config_Mail");
+                //var result = db.Messages.FromSqlRaw("Exec SP_INSERT_SALE_PRICE_ONLINE").ToList();
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    connection.Open();
+                    var timeout = 300;
+                    // Thực hiện truy vấn sử dụng Dapper
+                    var results = connection.Query("SP_Config_Mail", commandType: CommandType.StoredProcedure, commandTimeout: timeout);
+
+                    _logger.Information("Get: SP_Config_Mail Data: OK");
+                }
+            }
+            catch (Exception ex)
+            {
+                _logger.Error(ex, "Lỗi Exec Procedures ");
+            }
+        }
     }
 }

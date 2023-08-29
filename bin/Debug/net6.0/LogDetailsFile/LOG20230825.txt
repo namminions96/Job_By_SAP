@@ -46,3 +46,205 @@
 2023-08-25 08:38:51.495 +07:00 [INF] Process : 1 file CARStockBalance
 2023-08-25 08:38:57.799 +07:00 [INF] Run: SP_INSERT_CARSTOCKBALANCE_TK
 2023-08-25 08:39:01.957 +07:00 [INF] Run: SP_INSERT_CARSTOCKBALANCE_TK Data: OK
+2023-08-25 14:12:51.802 +07:00 [INF] Connect DB : DbConfig122
+2023-08-25 14:12:57.588 +07:00 [INF] SeriaNo: 15350121692330699 {"Status":400,"Message":"Trạng thái kích hoạt không hợp lệ StorageSite: ","Data":[{"Status":"Trạng thái kích hoạt không hợp lệ StorageSite: ","Return":"E16","ActicleNo":null,"ActicleType":null,"VoucherNumber":null,"Value":null,"Voucher_Currency":null,"Validity_From_Date":null,"Expiry_Date":null,"CompanyCode":null,"Partner":"","IsEmployee":null}]}
+2023-08-25 14:12:57.592 +07:00 [INF] Lỗi : 400
+2023-08-25 14:12:57.606 +07:00 [INF] Connect DB : DbConfig125
+2023-08-25 14:12:57.917 +07:00 [INF] SeriaNo: 20180121692329195 {"Status":400,"Message":"Trạng thái kích hoạt không hợp lệ StorageSite: ","Data":[{"Status":"Trạng thái kích hoạt không hợp lệ StorageSite: ","Return":"E16","ActicleNo":null,"ActicleType":null,"VoucherNumber":null,"Value":null,"Voucher_Currency":null,"Validity_From_Date":null,"Expiry_Date":null,"CompanyCode":null,"Partner":"","IsEmployee":null}]}
+2023-08-25 14:12:57.917 +07:00 [INF] Lỗi : 400
+2023-08-25 14:12:57.917 +07:00 [INF] Bắt đầu tải CARStockBalance : Call sftpHelper.DownloadAuthen 
+2023-08-25 14:12:58.267 +07:00 [ERR] DownloadAuthen/TEST/CARStockBalance/
+Renci.SshNet.Common.SshAuthenticationException: No suitable authentication method found to complete authentication (password).
+   at Renci.SshNet.ClientAuthentication.Authenticate(IConnectionInfoInternal connectionInfo, ISession session)
+   at Renci.SshNet.ConnectionInfo.Authenticate(ISession session, IServiceFactory serviceFactory)
+   at Renci.SshNet.Session.Connect()
+   at Renci.SshNet.BaseClient.CreateAndConnectSession()
+   at Renci.SshNet.BaseClient.Connect()
+   at BluePosVoucher.SftpHelper.DownloadAuthen(String source, String destination) in D:\Read_SAP_\Read_xml\SftpHelper.cs:line 37
+2023-08-25 14:12:58.374 +07:00 [INF] Bắt đầu đọc CARStockBalanceD:\Test
+2023-08-25 14:12:58.375 +07:00 [INF] Tổng File :0
+2023-08-25 14:13:10.295 +07:00 [INF] Connect DB : DbConfig122
+2023-08-25 14:13:16.066 +07:00 [INF] SeriaNo: 15350121692330699 {"Status":400,"Message":"Trạng thái kích hoạt không hợp lệ StorageSite: ","Data":[{"Status":"Trạng thái kích hoạt không hợp lệ StorageSite: ","Return":"E16","ActicleNo":null,"ActicleType":null,"VoucherNumber":null,"Value":null,"Voucher_Currency":null,"Validity_From_Date":null,"Expiry_Date":null,"CompanyCode":null,"Partner":"","IsEmployee":null}]}
+2023-08-25 14:13:16.069 +07:00 [INF] Lỗi : 400
+2023-08-25 14:13:16.083 +07:00 [INF] Connect DB : DbConfig125
+2023-08-25 14:13:16.475 +07:00 [INF] SeriaNo: 20180121692329195 {"Status":400,"Message":"Trạng thái kích hoạt không hợp lệ StorageSite: ","Data":[{"Status":"Trạng thái kích hoạt không hợp lệ StorageSite: ","Return":"E16","ActicleNo":null,"ActicleType":null,"VoucherNumber":null,"Value":null,"Voucher_Currency":null,"Validity_From_Date":null,"Expiry_Date":null,"CompanyCode":null,"Partner":"","IsEmployee":null}]}
+2023-08-25 14:13:16.475 +07:00 [INF] Lỗi : 400
+2023-08-25 14:13:16.476 +07:00 [INF] Bắt đầu tải CARStockBalance : Call sftpHelper.DownloadAuthen 
+2023-08-25 14:13:16.799 +07:00 [ERR] DownloadAuthen/TEST/CARStockBalance/
+Renci.SshNet.Common.SshAuthenticationException: No suitable authentication method found to complete authentication (password).
+   at Renci.SshNet.ClientAuthentication.Authenticate(IConnectionInfoInternal connectionInfo, ISession session)
+   at Renci.SshNet.ConnectionInfo.Authenticate(ISession session, IServiceFactory serviceFactory)
+   at Renci.SshNet.Session.Connect()
+   at Renci.SshNet.BaseClient.CreateAndConnectSession()
+   at Renci.SshNet.BaseClient.Connect()
+   at BluePosVoucher.SftpHelper.DownloadAuthen(String source, String destination) in D:\Read_SAP_\Read_xml\SftpHelper.cs:line 37
+2023-08-25 14:13:16.847 +07:00 [INF] Bắt đầu đọc CARStockBalanceD:\Test
+2023-08-25 14:13:16.848 +07:00 [INF] Tổng File :0
+2023-08-25 14:13:31.580 +07:00 [INF] Connect DB : DbConfig122
+2023-08-25 14:13:36.566 +07:00 [INF] SeriaNo: 15350121692330699 {"Status":400,"Message":"Trạng thái kích hoạt không hợp lệ StorageSite: ","Data":[{"Status":"Trạng thái kích hoạt không hợp lệ StorageSite: ","Return":"E16","ActicleNo":null,"ActicleType":null,"VoucherNumber":null,"Value":null,"Voucher_Currency":null,"Validity_From_Date":null,"Expiry_Date":null,"CompanyCode":null,"Partner":"","IsEmployee":null}]}
+2023-08-25 14:13:36.569 +07:00 [INF] Lỗi : 400
+2023-08-25 14:13:36.581 +07:00 [INF] Connect DB : DbConfig125
+2023-08-25 14:13:37.192 +07:00 [INF] SeriaNo: 20180121692329195 {"Status":400,"Message":"Trạng thái kích hoạt không hợp lệ StorageSite: ","Data":[{"Status":"Trạng thái kích hoạt không hợp lệ StorageSite: ","Return":"E16","ActicleNo":null,"ActicleType":null,"VoucherNumber":null,"Value":null,"Voucher_Currency":null,"Validity_From_Date":null,"Expiry_Date":null,"CompanyCode":null,"Partner":"","IsEmployee":null}]}
+2023-08-25 14:13:37.192 +07:00 [INF] Lỗi : 400
+2023-08-25 14:13:37.192 +07:00 [INF] Bắt đầu tải CARStockBalance : Call sftpHelper.DownloadAuthen 
+2023-08-25 14:13:37.485 +07:00 [ERR] DownloadAuthen/TEST/CARStockBalance/
+Renci.SshNet.Common.SshAuthenticationException: No suitable authentication method found to complete authentication (password).
+   at Renci.SshNet.ClientAuthentication.Authenticate(IConnectionInfoInternal connectionInfo, ISession session)
+   at Renci.SshNet.ConnectionInfo.Authenticate(ISession session, IServiceFactory serviceFactory)
+   at Renci.SshNet.Session.Connect()
+   at Renci.SshNet.BaseClient.CreateAndConnectSession()
+   at Renci.SshNet.BaseClient.Connect()
+   at BluePosVoucher.SftpHelper.DownloadAuthen(String source, String destination) in D:\Read_SAP_\Read_xml\SftpHelper.cs:line 37
+2023-08-25 14:13:37.547 +07:00 [INF] Bắt đầu đọc CARStockBalanceD:\Test
+2023-08-25 14:13:37.547 +07:00 [INF] Tổng File :0
+2023-08-25 17:26:19.013 +07:00 [INF] Connect DB : DbConfig122
+2023-08-25 17:26:22.219 +07:00 [INF] SeriaNo: 15350121692330699 {"Status":400,"Message":"Trạng thái kích hoạt không hợp lệ StorageSite: ","Data":[{"Status":"Trạng thái kích hoạt không hợp lệ StorageSite: ","Return":"E16","ActicleNo":null,"ActicleType":null,"VoucherNumber":null,"Value":null,"Voucher_Currency":null,"Validity_From_Date":null,"Expiry_Date":null,"CompanyCode":null,"Partner":"","IsEmployee":null}]}
+2023-08-25 17:26:22.226 +07:00 [INF] Lỗi : 400
+2023-08-25 17:26:22.249 +07:00 [INF] Connect DB : DbConfig125
+2023-08-25 17:26:23.410 +07:00 [INF] SeriaNo: 20180121692329195 {"Status":400,"Message":"Trạng thái kích hoạt không hợp lệ StorageSite: ","Data":[{"Status":"Trạng thái kích hoạt không hợp lệ StorageSite: ","Return":"E16","ActicleNo":null,"ActicleType":null,"VoucherNumber":null,"Value":null,"Voucher_Currency":null,"Validity_From_Date":null,"Expiry_Date":null,"CompanyCode":null,"Partner":"","IsEmployee":null}]}
+2023-08-25 17:26:23.410 +07:00 [INF] Lỗi : 400
+2023-08-25 17:26:23.411 +07:00 [INF] Bắt đầu tải CARStockBalance : Call sftpHelper.DownloadAuthen 
+2023-08-25 17:26:23.921 +07:00 [ERR] DownloadAuthen/TEST/CARStockBalance/
+Renci.SshNet.Common.SshAuthenticationException: No suitable authentication method found to complete authentication (password).
+   at Renci.SshNet.ClientAuthentication.Authenticate(IConnectionInfoInternal connectionInfo, ISession session)
+   at Renci.SshNet.ConnectionInfo.Authenticate(ISession session, IServiceFactory serviceFactory)
+   at Renci.SshNet.Session.Connect()
+   at Renci.SshNet.BaseClient.CreateAndConnectSession()
+   at Renci.SshNet.BaseClient.Connect()
+   at BluePosVoucher.SftpHelper.DownloadAuthen(String source, String destination) in D:\Read_SAP_\Read_xml\SftpHelper.cs:line 37
+2023-08-25 17:26:24.038 +07:00 [INF] Bắt đầu đọc CARStockBalance: D:\Test
+2023-08-25 17:26:24.040 +07:00 [INF] Tổng File :1
+2023-08-25 17:26:25.668 +07:00 [ERR] Lỗi ProcessCSV_CARStockBalance
+System.InvalidOperationException: The entity type 'MailConfig' requires a primary key to be defined. If you intended to use a keyless entity type, call 'HasNoKey' in 'OnModelCreating'. For more information on keyless entity types, see https://go.microsoft.com/fwlink/?linkid=2141943.
+   at Microsoft.EntityFrameworkCore.Infrastructure.ModelValidator.ValidateNonNullPrimaryKeys(IModel model, IDiagnosticsLogger`1 logger)
+   at Microsoft.EntityFrameworkCore.Infrastructure.ModelValidator.Validate(IModel model, IDiagnosticsLogger`1 logger)
+   at Microsoft.EntityFrameworkCore.Infrastructure.RelationalModelValidator.Validate(IModel model, IDiagnosticsLogger`1 logger)
+   at Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerModelValidator.Validate(IModel model, IDiagnosticsLogger`1 logger)
+   at Microsoft.EntityFrameworkCore.Infrastructure.ModelRuntimeInitializer.Initialize(IModel model, Boolean designTime, IDiagnosticsLogger`1 validationLogger)
+   at Microsoft.EntityFrameworkCore.Infrastructure.ModelSource.GetModel(DbContext context, ModelCreationDependencies modelCreationDependencies, Boolean designTime)
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.CreateModel(Boolean designTime)
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.get_Model()
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()
+   at Microsoft.EntityFrameworkCore.DbContext.get_ContextServices()
+   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()
+   at Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Internal.IDbContextDependencies.get_StateManager()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.EntryWithoutDetectChanges(TEntity entity)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Add(TEntity entity)
+   at Read_xml.ReadFile.ProcessCSV_CARStockBalance(String csvFile, String processedFolderPathter) in D:\Read_SAP_\Read_xml\ReadFile.cs:line 78
+2023-08-25 17:27:15.170 +07:00 [INF] Connect DB : DbConfig122
+2023-08-25 17:27:18.746 +07:00 [INF] SeriaNo: 15350121692330699 {"Status":400,"Message":"Trạng thái kích hoạt không hợp lệ StorageSite: ","Data":[{"Status":"Trạng thái kích hoạt không hợp lệ StorageSite: ","Return":"E16","ActicleNo":null,"ActicleType":null,"VoucherNumber":null,"Value":null,"Voucher_Currency":null,"Validity_From_Date":null,"Expiry_Date":null,"CompanyCode":null,"Partner":"","IsEmployee":null}]}
+2023-08-25 17:27:18.749 +07:00 [INF] Lỗi : 400
+2023-08-25 17:27:18.760 +07:00 [INF] Connect DB : DbConfig125
+2023-08-25 17:27:19.213 +07:00 [INF] SeriaNo: 20180121692329195 {"Status":400,"Message":"Trạng thái kích hoạt không hợp lệ StorageSite: ","Data":[{"Status":"Trạng thái kích hoạt không hợp lệ StorageSite: ","Return":"E16","ActicleNo":null,"ActicleType":null,"VoucherNumber":null,"Value":null,"Voucher_Currency":null,"Validity_From_Date":null,"Expiry_Date":null,"CompanyCode":null,"Partner":"","IsEmployee":null}]}
+2023-08-25 17:27:19.214 +07:00 [INF] Lỗi : 400
+2023-08-25 17:27:19.214 +07:00 [INF] Bắt đầu tải CARStockBalance : Call sftpHelper.DownloadAuthen 
+2023-08-25 17:27:19.523 +07:00 [ERR] DownloadAuthen/TEST/CARStockBalance/
+Renci.SshNet.Common.SshAuthenticationException: No suitable authentication method found to complete authentication (password).
+   at Renci.SshNet.ClientAuthentication.Authenticate(IConnectionInfoInternal connectionInfo, ISession session)
+   at Renci.SshNet.ConnectionInfo.Authenticate(ISession session, IServiceFactory serviceFactory)
+   at Renci.SshNet.Session.Connect()
+   at Renci.SshNet.BaseClient.CreateAndConnectSession()
+   at Renci.SshNet.BaseClient.Connect()
+   at BluePosVoucher.SftpHelper.DownloadAuthen(String source, String destination) in D:\Read_SAP_\Read_xml\SftpHelper.cs:line 37
+2023-08-25 17:27:19.603 +07:00 [INF] Bắt đầu đọc CARStockBalance: D:\Test
+2023-08-25 17:27:19.604 +07:00 [INF] Tổng File :1
+2023-08-25 17:28:49.769 +07:00 [INF] Connect DB : DbConfig122
+2023-08-25 17:28:54.211 +07:00 [INF] SeriaNo: 15350121692330699 {"Status":400,"Message":"Trạng thái kích hoạt không hợp lệ StorageSite: ","Data":[{"Status":"Trạng thái kích hoạt không hợp lệ StorageSite: ","Return":"E16","ActicleNo":null,"ActicleType":null,"VoucherNumber":null,"Value":null,"Voucher_Currency":null,"Validity_From_Date":null,"Expiry_Date":null,"CompanyCode":null,"Partner":"","IsEmployee":null}]}
+2023-08-25 17:28:54.216 +07:00 [INF] Lỗi : 400
+2023-08-25 17:28:54.230 +07:00 [INF] Connect DB : DbConfig125
+2023-08-25 17:28:54.417 +07:00 [INF] SeriaNo: 20180121692329195 {"Status":400,"Message":"Trạng thái kích hoạt không hợp lệ StorageSite: ","Data":[{"Status":"Trạng thái kích hoạt không hợp lệ StorageSite: ","Return":"E16","ActicleNo":null,"ActicleType":null,"VoucherNumber":null,"Value":null,"Voucher_Currency":null,"Validity_From_Date":null,"Expiry_Date":null,"CompanyCode":null,"Partner":"","IsEmployee":null}]}
+2023-08-25 17:28:54.417 +07:00 [INF] Lỗi : 400
+2023-08-25 17:28:54.418 +07:00 [INF] Bắt đầu tải CARStockBalance : Call sftpHelper.DownloadAuthen 
+2023-08-25 17:28:54.810 +07:00 [ERR] DownloadAuthen/TEST/CARStockBalance/
+Renci.SshNet.Common.SshAuthenticationException: No suitable authentication method found to complete authentication (password).
+   at Renci.SshNet.ClientAuthentication.Authenticate(IConnectionInfoInternal connectionInfo, ISession session)
+   at Renci.SshNet.ConnectionInfo.Authenticate(ISession session, IServiceFactory serviceFactory)
+   at Renci.SshNet.Session.Connect()
+   at Renci.SshNet.BaseClient.CreateAndConnectSession()
+   at Renci.SshNet.BaseClient.Connect()
+   at BluePosVoucher.SftpHelper.DownloadAuthen(String source, String destination) in D:\Read_SAP_\Read_xml\SftpHelper.cs:line 37
+2023-08-25 17:28:54.854 +07:00 [INF] Bắt đầu đọc CARStockBalance: D:\Test
+2023-08-25 17:28:54.856 +07:00 [INF] Tổng File :1
+2023-08-25 17:30:33.707 +07:00 [INF] File:  12.csv Count Data Inserted : 22984 Row
+2023-08-25 17:31:26.933 +07:00 [INF] Connect DB : DbConfig122
+2023-08-25 17:31:31.247 +07:00 [INF] SeriaNo: 15350121692330699 {"Status":400,"Message":"Trạng thái kích hoạt không hợp lệ StorageSite: ","Data":[{"Status":"Trạng thái kích hoạt không hợp lệ StorageSite: ","Return":"E16","ActicleNo":null,"ActicleType":null,"VoucherNumber":null,"Value":null,"Voucher_Currency":null,"Validity_From_Date":null,"Expiry_Date":null,"CompanyCode":null,"Partner":"","IsEmployee":null}]}
+2023-08-25 17:31:31.254 +07:00 [INF] Lỗi : 400
+2023-08-25 17:31:31.270 +07:00 [INF] Connect DB : DbConfig125
+2023-08-25 17:31:31.526 +07:00 [INF] SeriaNo: 20180121692329195 {"Status":400,"Message":"Trạng thái kích hoạt không hợp lệ StorageSite: ","Data":[{"Status":"Trạng thái kích hoạt không hợp lệ StorageSite: ","Return":"E16","ActicleNo":null,"ActicleType":null,"VoucherNumber":null,"Value":null,"Voucher_Currency":null,"Validity_From_Date":null,"Expiry_Date":null,"CompanyCode":null,"Partner":"","IsEmployee":null}]}
+2023-08-25 17:31:31.527 +07:00 [INF] Lỗi : 400
+2023-08-25 17:31:31.527 +07:00 [INF] Bắt đầu tải CARStockBalance : Call sftpHelper.DownloadAuthen 
+2023-08-25 17:31:31.852 +07:00 [ERR] DownloadAuthen/TEST/CARStockBalance/
+Renci.SshNet.Common.SshAuthenticationException: No suitable authentication method found to complete authentication (password).
+   at Renci.SshNet.ClientAuthentication.Authenticate(IConnectionInfoInternal connectionInfo, ISession session)
+   at Renci.SshNet.ConnectionInfo.Authenticate(ISession session, IServiceFactory serviceFactory)
+   at Renci.SshNet.Session.Connect()
+   at Renci.SshNet.BaseClient.CreateAndConnectSession()
+   at Renci.SshNet.BaseClient.Connect()
+   at BluePosVoucher.SftpHelper.DownloadAuthen(String source, String destination) in D:\Read_SAP_\Read_xml\SftpHelper.cs:line 37
+2023-08-25 17:31:31.920 +07:00 [INF] Bắt đầu đọc CARStockBalance: D:\Test
+2023-08-25 17:31:38.934 +07:00 [INF] Tổng File :1
+2023-08-25 17:32:49.327 +07:00 [INF] File:  12.csv Count Data Inserted : 22984 Row
+2023-08-25 17:34:02.313 +07:00 [INF] Connect DB : DbConfig122
+2023-08-25 17:34:07.564 +07:00 [INF] SeriaNo: 15350121692330699 {"Status":400,"Message":"Trạng thái kích hoạt không hợp lệ StorageSite: ","Data":[{"Status":"Trạng thái kích hoạt không hợp lệ StorageSite: ","Return":"E16","ActicleNo":null,"ActicleType":null,"VoucherNumber":null,"Value":null,"Voucher_Currency":null,"Validity_From_Date":null,"Expiry_Date":null,"CompanyCode":null,"Partner":"","IsEmployee":null}]}
+2023-08-25 17:34:07.567 +07:00 [INF] Lỗi : 400
+2023-08-25 17:34:07.582 +07:00 [INF] Connect DB : DbConfig125
+2023-08-25 17:34:07.892 +07:00 [INF] SeriaNo: 20180121692329195 {"Status":400,"Message":"Trạng thái kích hoạt không hợp lệ StorageSite: ","Data":[{"Status":"Trạng thái kích hoạt không hợp lệ StorageSite: ","Return":"E16","ActicleNo":null,"ActicleType":null,"VoucherNumber":null,"Value":null,"Voucher_Currency":null,"Validity_From_Date":null,"Expiry_Date":null,"CompanyCode":null,"Partner":"","IsEmployee":null}]}
+2023-08-25 17:34:07.893 +07:00 [INF] Lỗi : 400
+2023-08-25 17:34:07.893 +07:00 [INF] Bắt đầu tải CARStockBalance : Call sftpHelper.DownloadAuthen 
+2023-08-25 17:34:08.313 +07:00 [ERR] DownloadAuthen/TEST/CARStockBalance/
+Renci.SshNet.Common.SshAuthenticationException: No suitable authentication method found to complete authentication (password).
+   at Renci.SshNet.ClientAuthentication.Authenticate(IConnectionInfoInternal connectionInfo, ISession session)
+   at Renci.SshNet.ConnectionInfo.Authenticate(ISession session, IServiceFactory serviceFactory)
+   at Renci.SshNet.Session.Connect()
+   at Renci.SshNet.BaseClient.CreateAndConnectSession()
+   at Renci.SshNet.BaseClient.Connect()
+   at BluePosVoucher.SftpHelper.DownloadAuthen(String source, String destination) in D:\Read_SAP_\Read_xml\SftpHelper.cs:line 37
+2023-08-25 17:34:08.379 +07:00 [INF] Bắt đầu đọc CARStockBalance: D:\Test
+2023-08-25 17:34:19.994 +07:00 [INF] Tổng File :1
+2023-08-25 17:35:35.527 +07:00 [INF] File:  12.csv Count Data Inserted : 22984 Row
+2023-08-25 17:38:47.784 +07:00 [INF] Connect DB : DbConfig122
+2023-08-25 17:38:52.222 +07:00 [INF] SeriaNo: 15350121692330699 {"Status":400,"Message":"Trạng thái kích hoạt không hợp lệ StorageSite: ","Data":[{"Status":"Trạng thái kích hoạt không hợp lệ StorageSite: ","Return":"E16","ActicleNo":null,"ActicleType":null,"VoucherNumber":null,"Value":null,"Voucher_Currency":null,"Validity_From_Date":null,"Expiry_Date":null,"CompanyCode":null,"Partner":"","IsEmployee":null}]}
+2023-08-25 17:38:52.227 +07:00 [INF] Lỗi : 400
+2023-08-25 17:38:52.245 +07:00 [INF] Connect DB : DbConfig125
+2023-08-25 17:38:52.848 +07:00 [INF] SeriaNo: 20180121692329195 {"Status":400,"Message":"Trạng thái kích hoạt không hợp lệ StorageSite: ","Data":[{"Status":"Trạng thái kích hoạt không hợp lệ StorageSite: ","Return":"E16","ActicleNo":null,"ActicleType":null,"VoucherNumber":null,"Value":null,"Voucher_Currency":null,"Validity_From_Date":null,"Expiry_Date":null,"CompanyCode":null,"Partner":"","IsEmployee":null}]}
+2023-08-25 17:38:52.848 +07:00 [INF] Lỗi : 400
+2023-08-25 17:38:52.849 +07:00 [INF] Bắt đầu tải CARStockBalance : Call sftpHelper.DownloadAuthen 
+2023-08-25 17:38:53.196 +07:00 [ERR] DownloadAuthen/TEST/CARStockBalance/
+Renci.SshNet.Common.SshAuthenticationException: No suitable authentication method found to complete authentication (password).
+   at Renci.SshNet.ClientAuthentication.Authenticate(IConnectionInfoInternal connectionInfo, ISession session)
+   at Renci.SshNet.ConnectionInfo.Authenticate(ISession session, IServiceFactory serviceFactory)
+   at Renci.SshNet.Session.Connect()
+   at Renci.SshNet.BaseClient.CreateAndConnectSession()
+   at Renci.SshNet.BaseClient.Connect()
+   at BluePosVoucher.SftpHelper.DownloadAuthen(String source, String destination) in D:\Read_SAP_\Read_xml\SftpHelper.cs:line 37
+2023-08-25 17:38:53.239 +07:00 [INF] Bắt đầu đọc CARStockBalance: D:\Test
+2023-08-25 17:38:53.241 +07:00 [INF] Tổng File :1
+2023-08-25 17:40:04.475 +07:00 [INF] File:  12.csv Count Data Inserted : 22984 Row

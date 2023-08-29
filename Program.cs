@@ -1,13 +1,13 @@
 ﻿using BluePosVoucher;
+using BluePosVoucher.Data;
+using BluePosVoucher.Models;
 using Dapper;
+using Job_By_SAP;
 using Microsoft.Data.SqlClient;
 using Microsoft.Extensions.Configuration;
-using BluePosVoucher;
-using BluePosVoucher.Models;
+using Read_xml;
 using Serilog;
 using System.Data;
-using Read_xml;
-using BluePosVoucher.Data;
 
 internal class Program
 {
@@ -180,51 +180,60 @@ internal class Program
         }
 
         //------------------------------------------End Voucher SAP-----------------------------------------------------------
-
+        SendEmailExample sendEmailExample = new SendEmailExample(_logger);
         ReadFile readfilSAP = new ReadFile(_logger);
-            string IpSftp = configuration["IpSftp"];
-            int Host = 22;
-            string username = configuration["username"];
-            string password = configuration["password"];
-            string pathRemoteCar = configuration["pathRemoteCar"];
-            string pathLocalCar = configuration["pathLocalCar"];
-            string processedFoldercar = configuration["processedFoldercar"];
-            SftpHelper sftpHelper = new SftpHelper(IpSftp,Host, username,password, _logger);
-                _logger.Information("Bắt đầu tải CARStockBalance : Call sftpHelper.DownloadAuthen ");
-                sftpHelper.DownloadAuthen(pathRemoteCar, pathLocalCar);
-                _logger.Information("Bắt đầu đọc CARStockBalance" + pathLocalCar);
-                if (Directory.Exists(pathLocalCar))
+        string IpSftp = configuration["IpSftp"];
+        int Host = 22;
+        string username = configuration["username"];
+        string password = configuration["password"];
+        string pathRemoteCar = configuration["pathRemoteCar"];
+        string pathLocalCar = configuration["pathLocalCar"];
+        string processedFoldercar = configuration["processedFoldercar"];
+        SftpHelper sftpHelper = new SftpHelper(IpSftp, Host, username, password, _logger);
+        _logger.Information("Bắt đầu tải CARStockBalance : Call sftpHelper.DownloadAuthen ");
+        sftpHelper.DownloadAuthen(pathRemoteCar, pathLocalCar);
+        _logger.Information("Bắt đầu đọc CARStockBalance: " + pathLocalCar);
+        if (Directory.Exists(pathLocalCar))
+        {
+            string[] filteredStrings = Directory.GetFiles(pathLocalCar, "*.CSV");
+            var count = 0;
+            int countsl = filteredStrings.Length;
+            _logger.Information("Tổng File :" + countsl);
+            if (countsl > 0)
+            {
+                foreach (string xmlFile1 in filteredStrings)
                 {
-                    string[] filteredStrings = Directory.GetFiles(pathLocalCar, "*.CSV");
-                    var count = 0;
-                int countsl = filteredStrings.Length;
-                _logger.Information("Tổng File :" + countsl);
-                    if (countsl > 0)
-                    {
-                        foreach (string xmlFile1 in filteredStrings)
-                        {
-                            readfilSAP.ProcessCSV_CARStockBalance(xmlFile1, processedFoldercar);
-                            count++;
-                        }
-                        _logger.Information("Process : " + count.ToString() + " file CARStockBalance");
-                    }
+                    readfilSAP.ProcessCSV_CARStockBalance(xmlFile1, processedFoldercar);
+                    count++;
+                }
+                sendEmailExample.ConfigMail("(Job CARStockBalance)- Số File : " + count.ToString() + " Insert thành công");
+                _logger.Information("Process : " + count.ToString() + " file CARStockBalance");
+                string[] getfile = Directory.GetFiles(pathLocalCar, "*.CSV");
+                int fileLoi = getfile.Length;
+                if(fileLoi > 0)
+                {
+                    sendEmailExample.ConfigMail("(Job CARStockBalance) Có : " + fileLoi + " file Lỗi Vui Lòng Kiểm tra ở Folder " + pathLocalCar);
+                }
+                DataSqlProcedure dataSql = new DataSqlProcedure(_logger);
+                if (fileLoi == 0)
+                {
+                    dataSql.Insert_TK_CarStockBalance();
                 }
                 else
                 {
-                    _logger.Information("File Not Found");
-                    Directory.CreateDirectory(pathLocalCar);
+                    _logger.Information("Còn " + fileLoi + " Chưa đọc hết chưa run được procedure");
                 }
-        string[] getfile = Directory.GetFiles(pathLocalCar, "*.CSV");
-        int fileLoi = getfile.Length;
-        DataSqlProcedure dataSql = new DataSqlProcedure(_logger);
-        if (fileLoi == 0)
-        {
-           dataSql.Insert_TK_CarStockBalance();
+            }
+            else
+            {
+                _logger.Information("Không Có Data");
+            }
         }
         else
         {
-            _logger.Information("Còn " + fileLoi + " Chưa đọc hết chưa run được procedure");
+            _logger.Information("File Not Found");
+            Directory.CreateDirectory(pathLocalCar);
         }
     }
- }
+}
 
