@@ -3,11 +3,15 @@ using BluePosVoucher.Data;
 using BluePosVoucher.Models;
 using Dapper;
 using Job_By_SAP;
+using Job_By_SAP.Data;
 using Microsoft.Data.SqlClient;
 using Microsoft.Extensions.Configuration;
 using Read_xml;
 using Serilog;
+using System;
 using System.Data;
+using System.Text;
+using System.Xml.Linq;
 
 internal class Program
 {
@@ -217,6 +221,27 @@ internal class Program
                 DataSqlProcedure dataSql = new DataSqlProcedure(_logger);
                 if (fileLoi == 0)
                 {
+                    List<string> siteList = dataSql.DataStoreXml();
+                    foreach (var site in siteList)
+                    {
+                        string querry = $"SELECT '800_B' as Mandt ,site as WarehouseCode, '20' as MerchantCode, [ArticleNumber] as MerchantSku, " +
+                            $"[UnreUseQty] as Quantity, '' as MovementType, '' as PostingDate," +
+                            $"CASE WHEN TransitQty = '' THEN 0 ELSE CAST(TransitQty AS DECIMAL(18, 3)) END AS TransitQty," +
+                            $"[BaseUoM] as UOM FROM [Inventory].[dbo].[CARStockBalances] where site = {site} and Status='0'";
+                        string currentTimestamp = DateTime.Now.ToString("yyyyMMddHHmmss");
+                        string xmldata =  dataSql.ConvertSQLtoXML(querry);
+                       string outputPath = $"D:\\XmlData\\PRD_WINMART_STOCKBALANCE_{site}_{currentTimestamp}.xml";
+                        if (!File.Exists(outputPath))
+                        {
+                            using (File.CreateText(outputPath)) { }
+                        }
+                        using (StreamWriter writer = new StreamWriter(outputPath, false, Encoding.UTF8))
+                        {
+                      
+                            writer.WriteLine(xmldata);
+                        }
+
+                    }
                     dataSql.Insert_TK_CarStockBalance();
                 }
                 else

@@ -11,6 +11,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml;
 using Job_By_SAP.Data;
+using Microsoft.Data.SqlClient;
 
 namespace Read_xml
 {
@@ -26,6 +27,7 @@ namespace Read_xml
         {
             try
             {
+                string fileName = System.IO.Path.GetFileNameWithoutExtension(csvFile);
                 using (var dbContext = new DbStaging_Inventory())
                 {
                     using (var reader = new StreamReader(csvFile))
@@ -54,6 +56,7 @@ namespace Read_xml
                             cARStock.UnreConsQty =data[6];
                             cARStock.TransitQty = data[7];
                             cARStock.UnprSaleQty = RemoveCommas(data[8]);
+                            cARStock.FileName = fileName;
 
                             //if (string.IsNullOrEmpty(cARStock.UnreUseQty))
                             //{
@@ -115,6 +118,46 @@ namespace Read_xml
             }
 
             return input;
+        }
+        public string ConvertSQLtoXML(string connectionString, string query)
+        {
+            StringBuilder xml = new StringBuilder();
+            xml.AppendLine("<Data>");
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    using (SqlDataReader reader = command.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            xml.AppendLine("<Record>");
+
+                            for (int i = 0; i < reader.FieldCount; i++)
+                            {
+                                string fieldName = reader.GetName(i);
+                                string fieldValue = reader[i].ToString();
+
+                                // Chuyển đổi các dấu phẩy thành dấu chấm trong các trường số
+                                if (fieldName.EndsWith("Qty"))
+                                {
+                                    fieldValue = fieldValue.Replace(",", ".");
+                                }
+
+                                xml.AppendLine($"<{fieldName}>{fieldValue}</{fieldName}>");
+                            }
+
+                            xml.AppendLine("</Record>");
+                        }
+                    }
+                }
+            }
+
+            xml.AppendLine("</Data>");
+
+            return xml.ToString();
         }
     }
 }

@@ -18,6 +18,7 @@ namespace BluePosVoucher.Models
         public string? UnreConsQty { get; set; }
         public string? TransitQty { get; set; }
         public string? UnprSaleQty { get; set; }
+        public string? FileName { get; set; }   
         public int Status { get; set; }
     }
 }

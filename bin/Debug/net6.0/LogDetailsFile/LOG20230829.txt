@@ -1,0 +1,255 @@
+2023-08-29 15:30:25.167 +07:00 [INF] Connect DB : DbConfig122
+2023-08-29 15:30:41.325 +07:00 [INF] SeriaNo: 15350121692330699 {"Status":400,"Message":"Voucher không hợp lệ hoặc đã được sử dụng","Data":[{"Status":"Voucher không hợp lệ hoặc đã được sử dụng","Return":"E16","ActicleNo":null,"ActicleType":null,"VoucherNumber":null,"Value":null,"Voucher_Currency":null,"Validity_From_Date":null,"Expiry_Date":null,"CompanyCode":null,"Partner":"","IsEmployee":null}]}
+2023-08-29 15:30:41.329 +07:00 [INF] Lỗi : 400
+2023-08-29 15:30:41.343 +07:00 [INF] Connect DB : DbConfig125
+2023-08-29 15:30:41.368 +07:00 [INF] Bắt đầu tải CARStockBalance : Call sftpHelper.DownloadAuthen 
+2023-08-29 15:30:42.124 +07:00 [ERR] DownloadAuthen/TEST/CARStockBalance/
+Renci.SshNet.Common.SshAuthenticationException: No suitable authentication method found to complete authentication (password).
+   at Renci.SshNet.ClientAuthentication.Authenticate(IConnectionInfoInternal connectionInfo, ISession session)
+   at Renci.SshNet.ConnectionInfo.Authenticate(ISession session, IServiceFactory serviceFactory)
+   at Renci.SshNet.Session.Connect()
+   at Renci.SshNet.BaseClient.CreateAndConnectSession()
+   at Renci.SshNet.BaseClient.Connect()
+   at BluePosVoucher.SftpHelper.DownloadAuthen(String source, String destination) in D:\Read_SAP_\Read_xml\SftpHelper.cs:line 37
+2023-08-29 15:30:42.239 +07:00 [INF] Bắt đầu đọc CARStockBalance: D:\Test
+2023-08-29 15:30:42.242 +07:00 [INF] Tổng File :1
+2023-08-29 15:31:02.566 +07:00 [INF] Connect DB : DbConfig122
+2023-08-29 15:31:07.329 +07:00 [INF] SeriaNo: 15350121692330699 {"Status":400,"Message":"Voucher không hợp lệ hoặc đã được sử dụng","Data":[{"Status":"Voucher không hợp lệ hoặc đã được sử dụng","Return":"E16","ActicleNo":null,"ActicleType":null,"VoucherNumber":null,"Value":null,"Voucher_Currency":null,"Validity_From_Date":null,"Expiry_Date":null,"CompanyCode":null,"Partner":"","IsEmployee":null}]}
+2023-08-29 15:31:07.332 +07:00 [INF] Lỗi : 400
+2023-08-29 15:31:07.344 +07:00 [INF] Connect DB : DbConfig125
+2023-08-29 15:31:07.368 +07:00 [INF] Bắt đầu tải CARStockBalance : Call sftpHelper.DownloadAuthen 
+2023-08-29 15:31:07.823 +07:00 [ERR] DownloadAuthen/TEST/CARStockBalance/
+Renci.SshNet.Common.SshAuthenticationException: No suitable authentication method found to complete authentication (password).
+   at Renci.SshNet.ClientAuthentication.Authenticate(IConnectionInfoInternal connectionInfo, ISession session)
+   at Renci.SshNet.ConnectionInfo.Authenticate(ISession session, IServiceFactory serviceFactory)
+   at Renci.SshNet.Session.Connect()
+   at Renci.SshNet.BaseClient.CreateAndConnectSession()
+   at Renci.SshNet.BaseClient.Connect()
+   at BluePosVoucher.SftpHelper.DownloadAuthen(String source, String destination) in D:\Read_SAP_\Read_xml\SftpHelper.cs:line 37
+2023-08-29 15:31:07.886 +07:00 [INF] Bắt đầu đọc CARStockBalance: D:\Test
+2023-08-29 15:31:07.887 +07:00 [INF] Tổng File :1
+2023-08-29 15:32:23.274 +07:00 [INF] File:  12.csv Count Data Inserted : 22984 Row
+2023-08-29 15:32:49.321 +07:00 [ERR] Error sending email: System.Net.Mail.SmtpException: Failure sending mail.
+ ---> System.Net.Internals.SocketExceptionFactory+ExtendedSocketException (10060): A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond. [::ffff:10.235.64.54]:25
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   at System.Net.Sockets.TcpClient.Connect(String hostname, Int32 port)
+--- End of stack trace from previous location ---
+   at System.Net.Sockets.TcpClient.Connect(String hostname, Int32 port)
+   at System.Net.Mail.SmtpConnection.GetConnection(String host, Int32 port)
+   at System.Net.Mail.SmtpTransport.GetConnection(String host, Int32 port)
+   at System.Net.Mail.SmtpClient.GetConnection()
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   --- End of inner exception stack trace ---
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at Job_By_SAP.SendEmailExample.SendEmail(String mailServer, Int32 port, Boolean enableSSL, String username, String password, String recipient, String body) in D:\Read_SAP_\Read_xml\SendEmailExample.cs:line 66
+2023-08-29 15:32:49.322 +07:00 [INF] Process : 1 file CARStockBalance
+2023-08-29 15:32:49.326 +07:00 [INF] Run: SP_INSERT_CARSTOCKBALANCE_TK
+2023-08-29 16:14:12.960 +07:00 [INF] Connect DB : DbConfig122
+2023-08-29 16:14:16.417 +07:00 [INF] SeriaNo: 15350121692330699 {"Status":400,"Message":"Voucher không hợp lệ hoặc đã được sử dụng","Data":[{"Status":"Voucher không hợp lệ hoặc đã được sử dụng","Return":"E16","ActicleNo":null,"ActicleType":null,"VoucherNumber":null,"Value":null,"Voucher_Currency":null,"Validity_From_Date":null,"Expiry_Date":null,"CompanyCode":null,"Partner":"","IsEmployee":null}]}
+2023-08-29 16:14:16.421 +07:00 [INF] Lỗi : 400
+2023-08-29 16:14:16.438 +07:00 [INF] Connect DB : DbConfig125
+2023-08-29 16:14:16.466 +07:00 [INF] Bắt đầu tải CARStockBalance : Call sftpHelper.DownloadAuthen 
+2023-08-29 16:14:16.822 +07:00 [ERR] DownloadAuthen/TEST/CARStockBalance/
+Renci.SshNet.Common.SshAuthenticationException: No suitable authentication method found to complete authentication (password).
+   at Renci.SshNet.ClientAuthentication.Authenticate(IConnectionInfoInternal connectionInfo, ISession session)
+   at Renci.SshNet.ConnectionInfo.Authenticate(ISession session, IServiceFactory serviceFactory)
+   at Renci.SshNet.Session.Connect()
+   at Renci.SshNet.BaseClient.CreateAndConnectSession()
+   at Renci.SshNet.BaseClient.Connect()
+   at BluePosVoucher.SftpHelper.DownloadAuthen(String source, String destination) in D:\Read_SAP_\Read_xml\SftpHelper.cs:line 37
+2023-08-29 16:14:16.957 +07:00 [INF] Bắt đầu đọc CARStockBalance: D:\Test
+2023-08-29 16:14:16.959 +07:00 [INF] Tổng File :1
+2023-08-29 16:16:07.029 +07:00 [INF] File:  12.csv Count Data Inserted : 22984 Row
+2023-08-29 16:16:55.930 +07:00 [ERR] Error sending email: System.Net.Mail.SmtpException: Failure sending mail.
+ ---> System.Net.Internals.SocketExceptionFactory+ExtendedSocketException (10060): A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond. [::ffff:10.235.64.54]:25
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   at System.Net.Sockets.TcpClient.Connect(String hostname, Int32 port)
+--- End of stack trace from previous location ---
+   at System.Net.Sockets.TcpClient.Connect(String hostname, Int32 port)
+   at System.Net.Mail.SmtpConnection.GetConnection(String host, Int32 port)
+   at System.Net.Mail.SmtpTransport.GetConnection(String host, Int32 port)
+   at System.Net.Mail.SmtpClient.GetConnection()
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   --- End of inner exception stack trace ---
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at Job_By_SAP.SendEmailExample.SendEmail(String mailServer, Int32 port, Boolean enableSSL, String username, String password, String recipient, String body) in D:\Read_SAP_\Read_xml\SendEmailExample.cs:line 66
+2023-08-29 16:16:55.930 +07:00 [INF] Process : 1 file CARStockBalance
+2023-08-29 16:17:10.905 +07:00 [INF] Run: SP_INSERT_CARSTOCKBALANCE_TK
+2023-08-29 16:17:16.257 +07:00 [INF] Run: SP_INSERT_CARSTOCKBALANCE_TK Data: OK
+2023-08-29 16:17:20.095 +07:00 [INF] Get: DataStoreXml
+2023-08-29 16:22:23.484 +07:00 [INF] Connect DB : DbConfig122
+2023-08-29 16:22:28.131 +07:00 [INF] SeriaNo: 15350121692330699 {"Status":400,"Message":"Voucher không hợp lệ hoặc đã được sử dụng","Data":[{"Status":"Voucher không hợp lệ hoặc đã được sử dụng","Return":"E16","ActicleNo":null,"ActicleType":null,"VoucherNumber":null,"Value":null,"Voucher_Currency":null,"Validity_From_Date":null,"Expiry_Date":null,"CompanyCode":null,"Partner":"","IsEmployee":null}]}
+2023-08-29 16:22:28.136 +07:00 [INF] Lỗi : 400
+2023-08-29 16:22:28.149 +07:00 [INF] Connect DB : DbConfig125
+2023-08-29 16:22:28.190 +07:00 [INF] Bắt đầu tải CARStockBalance : Call sftpHelper.DownloadAuthen 
+2023-08-29 16:22:28.595 +07:00 [ERR] DownloadAuthen/TEST/CARStockBalance/
+Renci.SshNet.Common.SshAuthenticationException: No suitable authentication method found to complete authentication (password).
+   at Renci.SshNet.ClientAuthentication.Authenticate(IConnectionInfoInternal connectionInfo, ISession session)
+   at Renci.SshNet.ConnectionInfo.Authenticate(ISession session, IServiceFactory serviceFactory)
+   at Renci.SshNet.Session.Connect()
+   at Renci.SshNet.BaseClient.CreateAndConnectSession()
+   at Renci.SshNet.BaseClient.Connect()
+   at BluePosVoucher.SftpHelper.DownloadAuthen(String source, String destination) in D:\Read_SAP_\Read_xml\SftpHelper.cs:line 37
+2023-08-29 16:22:28.692 +07:00 [INF] Bắt đầu đọc CARStockBalance: D:\Test
+2023-08-29 16:22:28.694 +07:00 [INF] Tổng File :1
+2023-08-29 16:24:01.350 +07:00 [INF] File:  12.csv Count Data Inserted : 22984 Row
+2023-08-29 16:24:51.154 +07:00 [ERR] Error sending email: System.Net.Mail.SmtpException: Failure sending mail.
+ ---> System.Net.Internals.SocketExceptionFactory+ExtendedSocketException (10060): A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond. [::ffff:10.235.64.54]:25
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   at System.Net.Sockets.TcpClient.Connect(String hostname, Int32 port)
+--- End of stack trace from previous location ---
+   at System.Net.Sockets.TcpClient.Connect(String hostname, Int32 port)
+   at System.Net.Mail.SmtpConnection.GetConnection(String host, Int32 port)
+   at System.Net.Mail.SmtpTransport.GetConnection(String host, Int32 port)
+   at System.Net.Mail.SmtpClient.GetConnection()
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   --- End of inner exception stack trace ---
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at Job_By_SAP.SendEmailExample.SendEmail(String mailServer, Int32 port, Boolean enableSSL, String username, String password, String recipient, String body) in D:\Read_SAP_\Read_xml\SendEmailExample.cs:line 66
+2023-08-29 16:24:51.155 +07:00 [INF] Process : 1 file CARStockBalance
+2023-08-29 16:24:56.204 +07:00 [INF] Run: SP_INSERT_CARSTOCKBALANCE_TK
+2023-08-29 16:25:00.804 +07:00 [INF] Run: SP_INSERT_CARSTOCKBALANCE_TK Data: OK
+2023-08-29 16:25:04.760 +07:00 [INF] Get: DataStoreXml
+2023-08-29 16:28:36.061 +07:00 [INF] Connect DB : DbConfig122
+2023-08-29 16:28:43.939 +07:00 [INF] SeriaNo: 15350121692330699 {"Status":400,"Message":"Voucher không hợp lệ hoặc đã được sử dụng","Data":[{"Status":"Voucher không hợp lệ hoặc đã được sử dụng","Return":"E16","ActicleNo":null,"ActicleType":null,"VoucherNumber":null,"Value":null,"Voucher_Currency":null,"Validity_From_Date":null,"Expiry_Date":null,"CompanyCode":null,"Partner":"","IsEmployee":null}]}
+2023-08-29 16:28:43.941 +07:00 [INF] Lỗi : 400
+2023-08-29 16:28:43.954 +07:00 [INF] Connect DB : DbConfig125
+2023-08-29 16:28:43.977 +07:00 [INF] Bắt đầu tải CARStockBalance : Call sftpHelper.DownloadAuthen 
+2023-08-29 16:28:44.252 +07:00 [ERR] DownloadAuthen/TEST/CARStockBalance/
+Renci.SshNet.Common.SshAuthenticationException: No suitable authentication method found to complete authentication (password).
+   at Renci.SshNet.ClientAuthentication.Authenticate(IConnectionInfoInternal connectionInfo, ISession session)
+   at Renci.SshNet.ConnectionInfo.Authenticate(ISession session, IServiceFactory serviceFactory)
+   at Renci.SshNet.Session.Connect()
+   at Renci.SshNet.BaseClient.CreateAndConnectSession()
+   at Renci.SshNet.BaseClient.Connect()
+   at BluePosVoucher.SftpHelper.DownloadAuthen(String source, String destination) in D:\Read_SAP_\Read_xml\SftpHelper.cs:line 37
+2023-08-29 16:28:44.336 +07:00 [INF] Bắt đầu đọc CARStockBalance: D:\Test
+2023-08-29 16:28:44.338 +07:00 [INF] Tổng File :1
+2023-08-29 16:30:38.291 +07:00 [INF] File:  12.csv Count Data Inserted : 22984 Row
+2023-08-29 16:34:01.796 +07:00 [ERR] Error sending email: System.Net.Mail.SmtpException: Failure sending mail.
+ ---> System.Net.Internals.SocketExceptionFactory+ExtendedSocketException (10060): A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond. [::ffff:10.235.64.54]:25
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   at System.Net.Sockets.TcpClient.Connect(String hostname, Int32 port)
+--- End of stack trace from previous location ---
+   at System.Net.Sockets.TcpClient.Connect(String hostname, Int32 port)
+   at System.Net.Mail.SmtpConnection.GetConnection(String host, Int32 port)
+   at System.Net.Mail.SmtpTransport.GetConnection(String host, Int32 port)
+   at System.Net.Mail.SmtpClient.GetConnection()
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   --- End of inner exception stack trace ---
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at Job_By_SAP.SendEmailExample.SendEmail(String mailServer, Int32 port, Boolean enableSSL, String username, String password, String recipient, String body) in D:\Read_SAP_\Read_xml\SendEmailExample.cs:line 66
+2023-08-29 16:34:01.796 +07:00 [INF] Process : 1 file CARStockBalance
+2023-08-29 16:34:10.457 +07:00 [INF] Run: SP_INSERT_CARSTOCKBALANCE_TK
+2023-08-29 16:34:29.898 +07:00 [INF] Run: SP_INSERT_CARSTOCKBALANCE_TK Data: OK
+2023-08-29 16:34:37.781 +07:00 [INF] Get: DataStoreXml
+2023-08-29 16:42:18.726 +07:00 [INF] Connect DB : DbConfig122
+2023-08-29 16:42:24.875 +07:00 [INF] SeriaNo: 15350121692330699 {"Status":400,"Message":"Voucher không hợp lệ hoặc đã được sử dụng","Data":[{"Status":"Voucher không hợp lệ hoặc đã được sử dụng","Return":"E16","ActicleNo":null,"ActicleType":null,"VoucherNumber":null,"Value":null,"Voucher_Currency":null,"Validity_From_Date":null,"Expiry_Date":null,"CompanyCode":null,"Partner":"","IsEmployee":null}]}
+2023-08-29 16:42:24.878 +07:00 [INF] Lỗi : 400
+2023-08-29 16:42:24.890 +07:00 [INF] Connect DB : DbConfig125
+2023-08-29 16:42:24.919 +07:00 [INF] Bắt đầu tải CARStockBalance : Call sftpHelper.DownloadAuthen 
+2023-08-29 16:42:25.229 +07:00 [ERR] DownloadAuthen/TEST/CARStockBalance/
+Renci.SshNet.Common.SshAuthenticationException: No suitable authentication method found to complete authentication (password).
+   at Renci.SshNet.ClientAuthentication.Authenticate(IConnectionInfoInternal connectionInfo, ISession session)
+   at Renci.SshNet.ConnectionInfo.Authenticate(ISession session, IServiceFactory serviceFactory)
+   at Renci.SshNet.Session.Connect()
+   at Renci.SshNet.BaseClient.CreateAndConnectSession()
+   at Renci.SshNet.BaseClient.Connect()
+   at BluePosVoucher.SftpHelper.DownloadAuthen(String source, String destination) in D:\Read_SAP_\Read_xml\SftpHelper.cs:line 37
+2023-08-29 16:42:25.330 +07:00 [INF] Bắt đầu đọc CARStockBalance: D:\Test
+2023-08-29 16:42:25.332 +07:00 [INF] Tổng File :1
+2023-08-29 16:43:45.556 +07:00 [INF] File:  12.csv Count Data Inserted : 22984 Row
+2023-08-29 16:44:21.023 +07:00 [ERR] Error sending email: System.Net.Mail.SmtpException: Failure sending mail.
+ ---> System.Net.Internals.SocketExceptionFactory+ExtendedSocketException (10060): A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond. [::ffff:10.235.64.54]:25
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   at System.Net.Sockets.TcpClient.Connect(String hostname, Int32 port)
+--- End of stack trace from previous location ---
+   at System.Net.Sockets.TcpClient.Connect(String hostname, Int32 port)
+   at System.Net.Mail.SmtpConnection.GetConnection(String host, Int32 port)
+   at System.Net.Mail.SmtpTransport.GetConnection(String host, Int32 port)
+   at System.Net.Mail.SmtpClient.GetConnection()
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   --- End of inner exception stack trace ---
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at Job_By_SAP.SendEmailExample.SendEmail(String mailServer, Int32 port, Boolean enableSSL, String username, String password, String recipient, String body) in D:\Read_SAP_\Read_xml\SendEmailExample.cs:line 66
+2023-08-29 16:44:21.023 +07:00 [INF] Process : 1 file CARStockBalance
+2023-08-29 16:46:08.180 +07:00 [INF] Run: SP_INSERT_CARSTOCKBALANCE_TK
+2023-08-29 16:46:11.444 +07:00 [INF] Run: SP_INSERT_CARSTOCKBALANCE_TK Data: OK
+2023-08-29 16:46:11.454 +07:00 [INF] Get: DataStoreXml
+2023-08-29 16:46:23.541 +07:00 [INF] Connect DB : DbConfig122
+2023-08-29 16:46:28.287 +07:00 [INF] SeriaNo: 15350121692330699 {"Status":400,"Message":"Voucher không hợp lệ hoặc đã được sử dụng","Data":[{"Status":"Voucher không hợp lệ hoặc đã được sử dụng","Return":"E16","ActicleNo":null,"ActicleType":null,"VoucherNumber":null,"Value":null,"Voucher_Currency":null,"Validity_From_Date":null,"Expiry_Date":null,"CompanyCode":null,"Partner":"","IsEmployee":null}]}
+2023-08-29 16:46:28.290 +07:00 [INF] Lỗi : 400
+2023-08-29 16:46:28.304 +07:00 [INF] Connect DB : DbConfig125
+2023-08-29 16:46:28.333 +07:00 [INF] Bắt đầu tải CARStockBalance : Call sftpHelper.DownloadAuthen 
+2023-08-29 16:46:28.646 +07:00 [ERR] DownloadAuthen/TEST/CARStockBalance/
+Renci.SshNet.Common.SshAuthenticationException: No suitable authentication method found to complete authentication (password).
+   at Renci.SshNet.ClientAuthentication.Authenticate(IConnectionInfoInternal connectionInfo, ISession session)
+   at Renci.SshNet.ConnectionInfo.Authenticate(ISession session, IServiceFactory serviceFactory)
+   at Renci.SshNet.Session.Connect()
+   at Renci.SshNet.BaseClient.CreateAndConnectSession()
+   at Renci.SshNet.BaseClient.Connect()
+   at BluePosVoucher.SftpHelper.DownloadAuthen(String source, String destination) in D:\Read_SAP_\Read_xml\SftpHelper.cs:line 37
+2023-08-29 16:46:28.728 +07:00 [INF] Bắt đầu đọc CARStockBalance: D:\Test
+2023-08-29 16:46:28.729 +07:00 [INF] Tổng File :0
+2023-08-29 16:46:28.729 +07:00 [INF] Không Có Data
+2023-08-29 17:13:21.722 +07:00 [INF] Connect DB : DbConfig122
+2023-08-29 17:13:26.431 +07:00 [INF] SeriaNo: 15350121692330699 {"Status":400,"Message":"Voucher không hợp lệ hoặc đã được sử dụng","Data":[{"Status":"Voucher không hợp lệ hoặc đã được sử dụng","Return":"E16","ActicleNo":null,"ActicleType":null,"VoucherNumber":null,"Value":null,"Voucher_Currency":null,"Validity_From_Date":null,"Expiry_Date":null,"CompanyCode":null,"Partner":"","IsEmployee":null}]}
+2023-08-29 17:13:26.434 +07:00 [INF] Lỗi : 400
+2023-08-29 17:13:26.446 +07:00 [INF] Connect DB : DbConfig125
+2023-08-29 17:13:26.472 +07:00 [INF] Bắt đầu tải CARStockBalance : Call sftpHelper.DownloadAuthen 
+2023-08-29 17:13:26.826 +07:00 [ERR] DownloadAuthen/TEST/CARStockBalance/
+Renci.SshNet.Common.SshAuthenticationException: No suitable authentication method found to complete authentication (password).
+   at Renci.SshNet.ClientAuthentication.Authenticate(IConnectionInfoInternal connectionInfo, ISession session)
+   at Renci.SshNet.ConnectionInfo.Authenticate(ISession session, IServiceFactory serviceFactory)
+   at Renci.SshNet.Session.Connect()
+   at Renci.SshNet.BaseClient.CreateAndConnectSession()
+   at Renci.SshNet.BaseClient.Connect()
+   at BluePosVoucher.SftpHelper.DownloadAuthen(String source, String destination) in D:\Read_SAP_\Read_xml\SftpHelper.cs:line 37
+2023-08-29 17:13:26.884 +07:00 [INF] Bắt đầu đọc CARStockBalance: D:\Test
+2023-08-29 17:13:26.886 +07:00 [INF] Tổng File :1
+2023-08-29 17:15:11.286 +07:00 [INF] File:  12.csv Count Data Inserted : 22984 Row
+2023-08-29 17:19:50.048 +07:00 [INF] Connect DB : DbConfig122
+2023-08-29 17:19:54.695 +07:00 [INF] SeriaNo: 15350121692330699 {"Status":400,"Message":"Voucher không hợp lệ hoặc đã được sử dụng","Data":[{"Status":"Voucher không hợp lệ hoặc đã được sử dụng","Return":"E16","ActicleNo":null,"ActicleType":null,"VoucherNumber":null,"Value":null,"Voucher_Currency":null,"Validity_From_Date":null,"Expiry_Date":null,"CompanyCode":null,"Partner":"","IsEmployee":null}]}
+2023-08-29 17:19:54.698 +07:00 [INF] Lỗi : 400
+2023-08-29 17:19:54.710 +07:00 [INF] Connect DB : DbConfig125
+2023-08-29 17:19:54.732 +07:00 [INF] Bắt đầu tải CARStockBalance : Call sftpHelper.DownloadAuthen 
+2023-08-29 17:19:55.164 +07:00 [ERR] DownloadAuthen/TEST/CARStockBalance/
+Renci.SshNet.Common.SshAuthenticationException: No suitable authentication method found to complete authentication (password).
+   at Renci.SshNet.ClientAuthentication.Authenticate(IConnectionInfoInternal connectionInfo, ISession session)
+   at Renci.SshNet.ConnectionInfo.Authenticate(ISession session, IServiceFactory serviceFactory)
+   at Renci.SshNet.Session.Connect()
+   at Renci.SshNet.BaseClient.CreateAndConnectSession()
+   at Renci.SshNet.BaseClient.Connect()
+   at BluePosVoucher.SftpHelper.DownloadAuthen(String source, String destination) in D:\Read_SAP_\Read_xml\SftpHelper.cs:line 37
+2023-08-29 17:19:55.311 +07:00 [INF] Bắt đầu đọc CARStockBalance: D:\Test
+2023-08-29 17:19:55.315 +07:00 [INF] Tổng File :1
+2023-08-29 17:21:24.112 +07:00 [INF] File:  12.csv Count Data Inserted : 22984 Row
+2023-08-29 17:22:14.898 +07:00 [ERR] Error sending email: System.Net.Mail.SmtpException: Failure sending mail.
+ ---> System.Net.Internals.SocketExceptionFactory+ExtendedSocketException (10060): A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond. [::ffff:10.235.64.54]:25
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   at System.Net.Sockets.TcpClient.Connect(String hostname, Int32 port)
+--- End of stack trace from previous location ---
+   at System.Net.Sockets.TcpClient.Connect(String hostname, Int32 port)
+   at System.Net.Mail.SmtpConnection.GetConnection(String host, Int32 port)
+   at System.Net.Mail.SmtpTransport.GetConnection(String host, Int32 port)
+   at System.Net.Mail.SmtpClient.GetConnection()
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   --- End of inner exception stack trace ---
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at Job_By_SAP.SendEmailExample.SendEmail(String mailServer, Int32 port, Boolean enableSSL, String username, String password, String recipient, String body) in D:\Read_SAP_\Read_xml\SendEmailExample.cs:line 66
+2023-08-29 17:22:19.650 +07:00 [INF] Process : 1 file CARStockBalance
+2023-08-29 17:22:39.512 +07:00 [INF] Get: DataStoreXml
+2023-08-29 17:23:01.620 +07:00 [INF] Run: SP_INSERT_CARSTOCKBALANCE_TK
+2023-08-29 17:23:06.698 +07:00 [INF] Run: SP_INSERT_CARSTOCKBALANCE_TK Data: OK
